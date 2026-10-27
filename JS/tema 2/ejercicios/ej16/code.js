@@ -1,41 +1,63 @@
-let medidor = document.getElementById("medidor");
-let botonMeter = document.getElementById("botonMeter");
 
-let progreso = document.getElementById("progreso");
-let botonProgress = document.getElementById("botonProgress");
+window.onload = function () {
 
-let mensaje = document.getElementById("mensaje");
-let mensaje2 = document.getElementById("mensaje2");
+    let medidor = document.getElementById("medidor");
+    let botonMeter = document.getElementById("botonMeter");
 
-// metemos
-botonMeter.onclick = function () {
-  if (medidor.value >= 100) {
-    medidor.value = 0;
-  }
-  this.disabled = true; //bloqueo el boton
-  mensaje.style.display = "none";
-  let intervalo1 = setInterval(function () {
-    medidor.value += 10;
+    let progreso = document.getElementById("progreso");
+    let botonProgress = document.getElementById("botonProgress");
 
-    if (medidor.value >= 100) {
-      clearInterval(intervalo1);
-      mensaje.style.display = "block";
-      this.disabled = false; //bloqueo el boton
-    }
-  }, 500);
-};
+    let mensaje = document.getElementById("mensaje");
+    let mensaje2 = document.getElementById("mensaje2");
 
-// progress
-botonProgress.onclick = function () {
-  if (progreso.value >= 100) {
-    progreso.value = 0;
-  }
-  mensaje2.style.display = "none";
-  let intervalo2 = setInterval(function () {
-    progreso.value += 10;
-    if (progreso.value >= 100) {
-      clearInterval(intervalo2);
-      mensaje2.style.display = "block";
-    }
-  }, 500);
+    // METER
+    botonMeter.onclick = function () {
+
+        // Si está lleno, empezamos otra vez desde cero
+        if (medidor.value >= 100) {
+            medidor.value = 0;
+        }
+
+        botonMeter.disabled = true;
+        mensaje.style.display = "none";
+
+        let intervalo1 = setInterval(function () {
+
+            medidor.value += 10;
+
+            if (medidor.value >= 100) {
+                clearInterval(intervalo1);
+
+                mensaje.style.display = "block";
+                botonMeter.disabled = false;
+            }
+
+        }, 500);
+    };
+
+    // PROGRESS
+    botonProgress.onclick = function () {
+
+        // Si está lleno, empezamos otra vez desde cero
+        if (progreso.value >= 100) {
+            progreso.value = 0;
+        }
+
+        botonProgress.disabled = true;
+        mensaje2.style.display = "none";
+
+        let intervalo2 = setInterval(function () {
+
+            progreso.value += 10;
+
+            if (progreso.value >= 100) {
+                clearInterval(intervalo2);
+
+                mensaje2.style.display = "block";
+                botonProgress.disabled = false;
+            }
+
+        }, 500);
+    };
+
 };
