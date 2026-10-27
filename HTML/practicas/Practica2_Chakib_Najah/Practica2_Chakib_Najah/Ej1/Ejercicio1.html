@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Festival de Tecnología">
+        <img id="logo" src="logo.png" alt="logo" width="300" title="logo">
+        <title>Festival de Tecnología</title>
+    </head>
+
+<body id="inicio">
+
+    <h1>Festival de Tecnología</h1>
+
+    <!-- ERROR CORREGIDO: faltaba el menú inicial -->
+    <nav>
+        <a href="#programa">Programa</a> |
+        <a href="#actividades">Actividades</a> |
+        <a href="#ponentes">Ponentes</a> |
+        <a href="#localizacion">Localización</a>
+    </nav>
+
+
+    <h2 id="actividades">Actividades</h2>
+    <ul>
+        <li>Desarrollo Web
+            <ul>
+                <li>Creacion de paginas con HTML5</li>
+                <li>Diseño responsive</li>
+            </ul>
+        </li>
+        <li>
+            Inteligencia Artificial
+            <ul>
+                <li>Introducción al Machine Learning</li>
+                <li>Inteligencia Artificial Generativa</li>
+            </ul>
+        </li>
+        <li>Ciberseguriddad
+            <ul>
+                <li>Seguridad en aplicaciones web</li>
+                <li>Hacking ético</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- ERROR CORREGIDO: faltaba volver al inicio -->
+    <a href="#inicio">Volver al inicio</a>
+
+
+
+    <h2 id="programa">Programa</h2>
+    <table border="2">
+        <caption><strong>Programa del Festival</strong></caption>
+        <tr>
+            <th>Hora</th>
+            <th>Sala 1</th>
+            <th>Sala 2</th>
+            <th>Sala 3</th>
+        </tr>
+        <!-- ERROR CORREGIDO: las horas usan th, no td -->
+        <tr>
+            <th>9:00-10:00</th>
+            <td rowspan="2">Taller de Desarrollo Web</td>
+            <td>Introducción a la IA</td>
+            <td>Ciberseguriddad basica</td>
+        </tr>
+        <tr>
+            <th>10:00-11:00</th>
+            <td>Machine Learning</td>
+            <td>Hacking ético</td>
+        </tr>
+        <tr>
+            <th>11:00-12:00</th>
+            <td colspan="3">Descanso</td>
+        </tr>
+        <tr>
+            <th>11:30-12:30</th>
+            <td>HTML5</td>
+            <td rowspan="2">Inteligencia Artificial Generativa</td>
+            <td>Seguridad web</td>
+        </tr>
+        <tr>
+            <th>12:30-13:30</th>
+            <td>JavaScript moderno</td>
+            <td>Protección de datos</td>
+        </tr>
+    </table>
+    <a href="#inicio">Volver al inicio</a>
+
+    <h2 id="ponentes">Ponentes</h2>
+    <br>
+    <h3>Ana Garcia</h3>
+
+
+    <!-- ERROR CORREGIDO: la imagen debe estar dentro de un enlace -->
+    <a href="https://www.ejemplo.com/Ana">
+        <img src="ana.png" alt="Ana García" width="300">
+    </a>
+
+    <p>Especialista en Desarrollo Web.<a href="https://www.ejemplo.com/Ana">Visitar su web.</a></p>
+
+    <h3>Carlos López</h3>
+    <!-- ERROR CORREGIDO: href no se pone directamente en img -->
+    <a href="https://www.ejemplo.com/Carlos">
+        <img src="carlos.png" alt="Carlos López" width="300">
+    </a>
+    <p>Especialista en Inteligencia Artificial.<a href="https://www.ejemplo.com/Carlos">Visitar su web.</a></p>
+
+    <a href="#inicio">Volver al inicio</a>
+
+    <h2 id="localizacion">Localización</h2>
+    <p>El festival de Tecnología se celebrará en el Palacio de Ferias y Congresos de Málaga.</p>
+    <!-- ERROR CORREGIDO: faltaba target="_blank" -->
+    <a href="https://www.fycma.com" target="_blank">
+        Más información sobre el recinto
+    </a>
+    <a href="#inicio">Volver al inicio</a>
+    <p>Festival de Tecnología 2026</p>
+</body>
+
+</html>
