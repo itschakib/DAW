@@ -1,0 +1,40 @@
+/* 1. Fuente personalizada con @font-face */
+@font-face {
+    font-family: "MiFuente";
+    src: url("fuentes/mifuente.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. Fuente de Google Fonts */
+/* Primero debes añadir el enlace de Google Fonts en el <head> del HTML.
+   Después puedes utilizar la fuente con font-family. */
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 3. Aplicar la fuente personalizada */
+#fuenteLocal {
+    font-family: "MiFuente", sans-serif;
+}
+
+/* Aplicar la fuente de Google Fonts */
+#fuenteGoogle {
+    font-family: "Roboto", sans-serif;
+}
+
+/* 4. Diferentes estilos de fuente */
+#normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+#negrita {
+    font-weight: bold;
+}
+
+#cursiva {
+    font-style: italic;
+}

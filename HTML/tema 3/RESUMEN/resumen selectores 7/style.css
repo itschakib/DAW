@@ -1,0 +1,52 @@
+/* Estilo general de las tablas */
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* 1. Posición del título */
+#titulo {
+    caption-side: bottom;
+}
+
+/* 2. Ancho de la tabla */
+#ancho {
+    width: 80%;
+}
+
+/* 3. Altura de la tabla */
+#altura {
+    height: 200px;
+}
+
+/* 4. Distribución del ancho de las columnas */
+#distribucion {
+    width: 400px;
+    table-layout: fixed;
+}
+
+/* 5. Bordes unidos */
+#bordes {
+    border-collapse: collapse;
+}
+
+/* 6. Espacio entre celdas */
+#espacio {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+/* 7. Ocultar celdas vacías */
+#vacias {
+    empty-cells: hide;
+}
+
+/* 8. Alineación vertical */
+#vertical td {
+    height: 80px;
+    vertical-align: middle;
+}

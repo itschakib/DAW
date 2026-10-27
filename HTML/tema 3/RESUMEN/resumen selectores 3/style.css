@@ -1,0 +1,42 @@
+/*text align*/
+#alineacion {
+    text-align: center;
+}
+
+/*color de texto*/
+#color {
+    color: red;
+}
+
+/*color de fondo*/
+#fondo {
+    background-color: lightgray;
+}
+
+/*decoración de texto*/
+#decoracion {
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}
+
+/*letter spacing*/
+#caracteres {
+    letter-spacing: 55px;
+}
+
+/*word spacing*/
+#palabras {
+    word-spacing: 55px;
+}
+
+/*text transform*/
+#transformacion {
+    text-transform: uppercase;
+}
+
+/*line height*/
+#lineas {
+    line-height: 5.5;
+}

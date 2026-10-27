@@ -1,0 +1,58 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 1. Color de fondo */
+.caja-color {
+    background-color: #4caf50;
+    color: white;
+    padding: 50px;
+    height: 50px;
+}
+
+/* 2. Imagen de fondo */
+.caja-imagen {
+    background-image: url("pic.png");
+    color: white;
+    padding: 20px;
+}
+
+/* 3. Posición de la imagen */
+.caja-posicion {
+    background-image: url("pic.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 150px;
+    border: 1px solid black;
+}
+
+/* 4. Repetición de la imagen */
+.caja-repeat {
+    background-image: url("pic.png");
+    background-repeat: repeat-x;
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* 5. Tamaño de la imagen */
+.caja-size {
+    background-image: url("pic.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    color: white;
+}
+
+/* 6. Gradientes */
+.caja-gradiente {
+    background-image: linear-gradient(to right, red, yellow);
+    height: 150px;
+    color: black;
+    padding: 20px;
+}

@@ -1,0 +1,20 @@
+/* tipo de fuente */
+#fuente {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* estilo de fuente */
+#estilo {
+    font-style: italic;
+}
+/* grosor de fuente */
+#grosor {
+    font-weight: bold;
+}
+/* tamaño de fuente */
+#tamano {
+    font-size: 16px;
+}
+/* variantes de fuente */
+#variante {
+    font-variant: small-caps;
+}

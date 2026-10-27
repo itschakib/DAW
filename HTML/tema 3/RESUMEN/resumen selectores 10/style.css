@@ -1,0 +1,139 @@
+
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+/* MENÚ */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* 1. SCREEN */
+/* Se aplica cuando se visualiza en una pantalla */
+@media screen {
+    body {
+        background-color: #f0f8ff;
+    }
+}
+
+/* 2. PRINT */
+/* Se aplica al imprimir o generar un PDF */
+@media print {
+    nav {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* 3. ALL */
+/* Se aplica a todos los tipos de medio */
+@media all {
+    p {
+        font-family: Arial, sans-serif;
+    }
+}
+
+/* 4. RESOLUTION */
+/* Se aplica en pantallas con resolución de 2 dppx o superior */
+@media (min-resolution: 2dppx) {
+    #resolucion {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+/* 5. HOVER */
+/* Se aplica si el dispositivo permite pasar el ratón por encima */
+@media (hover: hover) {
+    #boton:hover {
+        background-color: green;
+        color: white;
+    }
+}
+
+/* 6. POINTER: COARSE */
+/* Se aplica cuando el puntero es grueso, como en una pantalla táctil */
+@media (pointer: coarse) {
+    #puntero {
+        background-color: lightyellow;
+        padding: 15px;
+    }
+}
+
+/* POINTER: FINE */
+/* Se aplica cuando el puntero es preciso, como un ratón */
+@media (pointer: fine) {
+    #puntero {
+        border: 2px solid blue;
+    }
+}
+
+/* 7. PREFERS-COLOR-SCHEME: DARK */
+/* Se aplica si el usuario prefiere el tema oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: white;
+    }
+
+    nav a {
+        color: lightblue;
+    }
+}
+
+/* PREFERS-COLOR-SCHEME: LIGHT */
+/* Se aplica si el usuario prefiere el tema claro */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* 8. PREFERS-REDUCED-MOTION */
+/* Reduce las animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+        scroll-behavior: auto;
+    }
+}
+
+/* EJEMPLO DE ANIMACIÓN */
+#animacion {
+    background-color: orange;
+    padding: 20px;
+    transition: background-color 1s;
+}
+
+#animacion:hover {
+    background-color: red;
+}
+
+/* RESPONSIVE: ANCHO MÁXIMO DE 600 PX */
+/* Se aplica a ventanas de 600 px o menos */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 10px;
+    }
+}

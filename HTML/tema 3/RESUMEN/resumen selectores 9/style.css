@@ -1,0 +1,62 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 1. Border-radius */
+.caja-redondeada {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 20px;
+    height: 50px;
+}
+
+/* 2. Box-shadow */
+.caja-sombra {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. Text-shadow */
+.texto-sombra {
+    color: darkblue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 4. Opacity */
+.caja-opacidad {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+/* 5. Linear-gradient */
+.caja-lineal {
+    background: linear-gradient(to right, #6a11cb, #ff6ec4);
+    color: white;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+/* 6. Radial-gradient */
+.caja-radial {
+    background: radial-gradient(circle, #ffd166, #ef476f);
+    color: black;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+/* 7. Columnas */
+.contenido {
+    column-count: 3;
+    column-gap: 30px;
+}

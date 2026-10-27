@@ -1,0 +1,22 @@
+/* line style type */
+ul#tipo {
+    list-style-type: square;
+}
+ol#ordenada {
+    list-style-type: decimal;
+}
+/* line style image */
+ul#imagen {
+    list-style-image: url('marcador.png');
+}
+/* line style position */
+ul#outside {
+    list-style-position: outside;
+}
+ul#inside {
+    list-style-position: inside;
+}
+/* line style sinamrcador */
+ul#sinMarcador {
+    list-style: none;
+}

@@ -1,0 +1,63 @@
+/* selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* selector de etiqueta */
+h2 {
+    color: blue;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* selector de id */
+#principal {
+    color: red;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+/* selector de clase */
+.destacado {
+    color: green;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+/* selector descendiente */
+.contenedor h2 {
+    color: purple;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* selector hijo directo */
+ul>li {
+    color: orange;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* selector hermano adyacente */
+h3+p {
+    color: brown;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* selector de atributos */
+a[href] {
+    color: pink;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Resumen para memorizar:
+- em → fuente del padre.
+- rem → fuente de la raíz.
+- % → depende de la referencia de la propiedad.
+- vw → ancho de la ventana.
+- vh → alto de la ventana.
+- px → unidad fija de CSS. */

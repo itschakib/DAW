@@ -1,0 +1,27 @@
+/* Enlace que todavía no has visitado */
+a:link {
+    color: blue;
+}
+
+/* Enlace que ya has visitado */
+a:visited {
+    color: purple;
+}
+
+/* Cuando pasas el ratón por encima */
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+/* Mientras mantienes pulsado el enlace */
+a:active {
+    color: red;
+}
+
+/* Cuando seleccionas el campo de texto */
+input:focus {
+    background-color: lightyellow;
+    border: 2px solid blue;
+    outline: none;
+}
