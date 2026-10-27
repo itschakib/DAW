@@ -143,6 +143,103 @@
     }
     ?>
     </form>
+
+
+
+    <h3>Ejercicio 4</h3>
+    <p>Introduce las notas de varias asignaturas de un solo estudiante
+        y obtén las siguientes estadisticas: Total de notas
+        // Nota máxima // Nota mínima // Media aritmética
+        // El número de aprobados // el número de suspensos</p>
+    <p>En el formulario tendremos dos campos de texto,
+        en el primero definiremos el nombre de las asignaturas
+        separadas por comas y en el segundo las notas de cada
+        asignatura separadas por coma. Para trabajar este ejercicio
+        , teneis que construir un array asociativo donde las claves
+        son el nombre de cada asignatura y el valor es la nota de dicha asignatura.
+        Después de mostrar todas las estadísticas, mostrar una tabla con tres columnas.
+        Asignatura || Nota || Calificación. Mostrar la fila en verde si esta aprobao y
+        en rojo si ha suspendido la asignatura</p>
+
+
+
+
+
+
+    <form method="post">
+        Cuántas asignaturas tienes?
+        <input type="number" name="cantidad" min="1" required>
+        <input type="submit" value="Introducir notas">
+    </form>
+
+    <?php
+    if (isset($_POST["cantidad"])) {
+
+        $cantidad = $_POST["cantidad"];
+
+        echo "<form method='post'>";
+
+        echo "<input type='hidden' name='cantidad'
+              value='$cantidad'>";
+
+        for ($i = 1; $i <= $cantidad; $i++) {
+            echo "Nota de la asignatura $i: ";
+            echo "<input type='number' name='notas[]'
+                  min='0' max='10' step='0.1' required><br>";
+        }
+
+        echo "<input type='submit' name='calcular'
+              value='Calcular estadísticas'>";
+        echo "</form>";
+    }
+
+    if (isset($_POST["calcular"])) {
+
+        $notas = $_POST["notas"];
+        $cantidad = count($notas);
+
+        $suma = 0;
+        $maxima = $notas[0];
+        $minima = $notas[0];
+        $aprobados = 0;
+        $suspensos = 0;
+
+        for ($i = 0; $i < $cantidad; $i++) {
+
+            $nota = $notas[$i];
+
+            $suma = $suma + $nota;
+
+            if ($nota > $maxima) {
+                $maxima = $nota;
+            }
+
+            if ($nota < $minima) {
+                $minima = $nota;
+            }
+
+            if ($nota >= 5) {
+                $aprobados++;
+            } else {
+                $suspensos++;
+            }
+        }
+
+        $media = $suma / $cantidad;
+
+        echo "<h3>Resultados</h3>";
+        echo "Total de notas: " . $cantidad . "<br>";
+        echo "Nota máxima: " . $maxima . "<br>";
+        echo "Nota mínima: " . $minima . "<br>";
+        echo "Media aritmética: " . round($media, 2) . "<br>";
+        echo "Número de aprobados: " . $aprobados . "<br>";
+        echo "Número de suspensos: " . $suspensos . "<br>";
+    }
+    ?>
+
+</body>
+</html>
+
 </body>
 
 </html>
