@@ -108,15 +108,36 @@
             $b = array_values($b);
 
             //Union
-            $union=$a;
+            $union = $a;
 
-            for ($i=0; $i < count($b); $i++) { 
-                $candidato=$b[$i];
-                $repetido=false;
-                for ($i=0; $i < count($union); $i++) { 
-                    if($candidato==$union[$j]) $repetido = true;
+            for ($i = 0; $i < count($b); $i++) {
+                $candidato = $b[$i];
+                $repetido = false;
+                for ($i = 0; $i < count($union); $i++) {
+                    if ($candidato == $union[$j]) $repetido = true;
                 }
-              if(!$repetido)$union[] = $candidato;
+                if (!$repetido) $union[] = $candidato;
+            }
+
+            //interseccion 
+            function interseccion(array $a, array $b): array
+            {
+                $inter = [];
+                for ($i = 0; $i < count($b); $i++) {
+                    for ($j = 0; $j < count($a); $j++) {
+                        if ($b[$i] == $a[$j]) $inter[] = $b[$i];
+                    }
+                }
+                return [];
+            }
+            //print_r($inter)
+
+            //DIFERENCIAS
+            function diferencia(array $a, array $b): array
+            {
+                $interseccion = interseccion($a, $b); //tengo los elementos comunes de los dos conjuntos
+
+                return [];
             }
         }
     }
