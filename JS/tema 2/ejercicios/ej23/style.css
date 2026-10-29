@@ -1,0 +1,17 @@
+
+#contenedor {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#imagen {
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}

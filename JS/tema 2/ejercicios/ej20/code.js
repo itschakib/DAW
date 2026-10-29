@@ -2,7 +2,7 @@
 window.onload = function () {
 
     let botones = document.querySelectorAll("button");
-
+//los buttonoes
     let generar = botones[0];
     let borrarViejo = botones[1];
     let borrarNuevos = botones[2];
@@ -10,7 +10,7 @@ window.onload = function () {
 
     let parrafo = document.querySelector("p");
 
-    // GENERAR
+    // button generar
     generar.onclick = function () {
 
         let nuevo = document.createElement("p");
@@ -18,14 +18,14 @@ window.onload = function () {
         nuevo.textContent = parrafo.textContent;
         nuevo.classList.add("nuevo");
 
-        // Añadimos el nuevo párrafo al mismo padre
+        // añadios el nuevo parrafi
         parrafo.parentNode.appendChild(nuevo);
 
-        // Desbloqueamos el botón
+        // desbloqueamos el boton
         borrarNuevos.disabled = false;
     };
 
-    // BORRAR VIEJO
+    // button borrar viejo
     borrarViejo.onclick = function () {
 
         if (parrafo != null) {
@@ -33,12 +33,12 @@ window.onload = function () {
             parrafo = null;
         }
 
-        // Bloqueamos estos dos botones
+        // bloqueamos estos buttons
         borrarViejo.disabled = true;
         sustituir.disabled = true;
     };
 
-    // BORRAR NUEVOS
+    // button borrar nuevos
     borrarNuevos.onclick = function () {
 
         let nuevos = document.querySelectorAll(".nuevo");
@@ -47,18 +47,18 @@ window.onload = function () {
             nuevos[i].parentNode.removeChild(nuevos[i]);
         }
 
-        // Bloqueamos el botón si ya no quedan párrafos nuevos
+        // bloqueamos este button ya no quedan parrafos nuevos
         borrarNuevos.disabled = true;
     };
 
-    // SUSTITUIR
+    // button sustituir
     sustituir.onclick = function () {
 
         if (parrafo != null) {
 
             let tabla = document.createElement("table");
 
-            // Primera fila
+            // primera fila
             let fila1 = document.createElement("tr");
 
             let celda1 = document.createElement("td");
@@ -70,7 +70,7 @@ window.onload = function () {
             fila1.appendChild(celda1);
             fila1.appendChild(celda2);
 
-            // Segunda fila
+            // segunda
             let fila2 = document.createElement("tr");
 
             let celda3 = document.createElement("td");
@@ -82,16 +82,16 @@ window.onload = function () {
             fila2.appendChild(celda3);
             fila2.appendChild(celda4);
 
-            // Añadimos las filas a la tabla
+            // añadimos las filas a la tabla
             tabla.appendChild(fila1);
             tabla.appendChild(fila2);
 
-            // Sustituimos el párrafo por la tabla
+            // subtitumis el parrafo por la tabla
             parrafo.parentNode.replaceChild(tabla, parrafo);
 
             parrafo = null;
 
-            // Ya no se puede borrar ni sustituir el párrafo inicial
+            // ya no se puede borrar ni sustituir el parrafo inicial
             borrarViejo.disabled = true;
             sustituir.disabled = true;
         }

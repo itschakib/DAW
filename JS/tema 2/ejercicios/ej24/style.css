@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #eeeeee;
+}
+
+h1 {
+    color: #222222;
+}
+
+/* Lista de tareas */
+ul {
+    width: 500px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Elementos de la lista */
+li {
+    padding: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Tareas impares: fondo verde y texto blanco */
+li:nth-child(odd) {
+    background-color: green;
+    color: white;
+}
+
+/* Tareas pares: fondo blanco y texto verde */
+li:nth-child(even) {
+    background-color: white;
+    color: green;
+}
+
+/* Botones */
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+}
+
+button:hover {
+    background-color: green;
+}
