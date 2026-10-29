@@ -237,9 +237,30 @@
     }
     ?>
 
-</body>
-</html>
 
+    <h3>Ejercicio 5</h3>
+    <p>Dado un array bidimnesional, crear un formulario con dos listas
+        desplegables en el que la primera lista se especifique a traves
+        de que columna vamos a ordenar y la segunda
+        especificara el ordern que se aplicara
+    </p>
+    <form action="tabla.php" method="post">
+        <input type="hidden" name="ejercicios" value="ej5">
+        <select name="columna">
+            <option disabled selected>Elige columna</option>
+            <option value="id">ID</option>
+            <option value="nombre">NOMBRE</option>
+            <option value="salario">Salario</option>
+
+        </select>
+        <select name="orden">
+            <option disabled selected>Elige orden</option>
+            <option value="id">ASDENTE</option>
+            <option value="nombre">DESANDENTE</option>
+
+        </select>
+        <input type="submit" value="ENVIAR">
+    </form>
 </body>
 
 </html>
