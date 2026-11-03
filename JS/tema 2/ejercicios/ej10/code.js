@@ -1,43 +1,38 @@
-function inicializador() {
-    let rojo = document.getElementById("rojo");
-    let azul = document.getElementById("azul");
-    let verde = document.getElementById("verde");
+let rojo = document.getElementById("red");
+let azul = document.getElementById("blue");
+let verde = document.getElementById("green");
 
-    rojo.style.width = "100px";
-    rojo.style.height = "100px";
-    rojo.style.backgroundColor = "red";
+rojo.style.width = "100px";
+azul.style.width = "100px";
+verde.style.width = "100px";
 
-    azul.style.width = "100px";
-    azul.style.height = "100px";
-    azul.style.backgroundColor = "blue";
+rojo.style.height = "100px";
+azul.style.height = "100px";
+verde.style.height = "100px";
 
-    verde.style.width = "100px";
-    verde.style.height = "100px";
-    verde.style.backgroundColor = "green";
+rojo.style.backgroundColor = "red";
+azul.style.backgroundColor = "blue";
+verde.style.backgroundColor = "green";
+rojo.onmouseover = function () {
+  document.body.style.backgroundColor = "red";
+};
 
-    rojo.onmouseover = function() {
-        document.body.style.backgroundColor = "red";
-    };
+azul.onmouseover = function () {
+  document.body.style.backgroundColor = "blue";
+};
 
-    azul.onmouseover = function() {
-        document.body.style.backgroundColor = "blue";
-    };
+verde.onmouseover = function () {
+  document.body.style.backgroundColor = "green";
+};
 
-    verde.onmouseover = function() {
-        document.body.style.backgroundColor = "green";
-    };
+rojo.onmouseout = function () {
+  document.body.style.backgroundColor = "white";
+};
 
-    rojo.onmouseout = function() {
-        document.body.style.backgroundColor = "white";
-    };
+azul.onmouseout = function () {
+  document.body.style.backgroundColor = "white";
+};
 
-    azul.onmouseout = function() {
-        document.body.style.backgroundColor = "white";
-    };
-
-    verde.onmouseout = function() {
-        document.body.style.backgroundColor = "white";
-    };
-}
-
-window.onload = inicializador;
+verde.onmouseout = function () {
+  document.body.style.backgroundColor = "white";
+};
