@@ -1,6 +1,11 @@
-let parrafo = document.getElementById("parrafo");
+window.onload = function (p) {
+  let parrafo = document.getElementById("parrafo");
 
-parrafo.onclick = function () {
-    parrafo.classList.toggle("uno");
-    parrafo.classList.toggle("dos");
+  parrafo.onclick = function () {
+    if (parrafo.getAttribute("class") == "uno") {
+      parrafo.setAttribute("class", "dos");
+    } else {
+      parrafo.setAttribute("class", "uno");
+    }
+  };
 };

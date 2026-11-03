@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+
+</head>
+
+
+
+
+<body>
+    <div id="numero">0</div>
+    <button id="sumar">sumar</button>
+    <button id="restar">restar</button>
+
+    <script>
+        window.onload = function () {
+            let numero = document.getElementById("numero");
+
+            document.getElementById("sumar").onclick = function () {
+                numero.textContent = Number(numero.textContent) + 1;
+                alert(numero.textContent);
+            }
+            document.getElementById("restar").onclick = function () {
+                numero.textContent = Number(numero.textContent) - 1;
+                alert(numero.textContent);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,7 +1,8 @@
-let botones = document.getElementsByTagName("button");
-
-for (let i = 0; i < botones.length; i++) {
-    botones[i].onclick = function () {
-        document.body.style.backgroundColor = this.value;
+window.onload = function () {
+  let buttons = document.querySelectorAll("button");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+      document.body.style.backgroundColor = this.value;
     };
-}
+  }
+};

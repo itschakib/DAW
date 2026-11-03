@@ -1,3 +1,8 @@
+// get Elmenetsbytagname
+let parrafos = document.getElementsByTagName("p");
+console.log(parrafos[0]);
+
+
 //Accedemos a los elemntos del DOM
 let tabla = document.getElementById("tabla");
 console.log(tabla);
@@ -25,3 +30,5 @@ let botonC = (document.getElementById("botonC").onclick = function () {
   let posicion = prompt("centre,left o right");
   tabla.setAttribute("align", posicion);
 });
+
+//boton D 

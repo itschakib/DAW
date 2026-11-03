@@ -1,34 +1,27 @@
-let fotos = [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-];
+window.onload = function () {
+  let posicion = 0;
+  let pics = ["1.png", "2.png", "3.png", "4.png"];
+  let foto = document.getElementById("foto");
+  let next = document.getElementById("siguiente");
+  let back = document.getElementById("anterior");
 
-let posicion = 0;
-let foto = document.getElementById("foto");
-let anterior = document.getElementById("anterior");
-let siguiente = document.getElementById("siguiente");
-
-siguiente.onclick = function () {
-    if (posicion < fotos.length - 1) {
-        posicion++;
-        foto.src = fotos[posicion];
+  siguiente.onclick = function () {
+    if (posicion < pics.length - 1) {
+      posicion++;
+      foto.src = pics[posicion];
+      test();
     }
-
-    comprobarBotones();
-};
-
-anterior.onclick = function () {
+  };
+  anterior.onclick = function () {
     if (posicion > 0) {
-        posicion--;
-        foto.src = fotos[posicion];
+      posicion--;
+      foto.src = pics[posicion];
+      test();
     }
+  };
 
-    comprobarBotones();
-};
-
-function comprobarBotones() {
+  function test() {
     anterior.disabled = posicion == 0;
-    siguiente.disabled = posicion == fotos.length - 1;
-}
+    siguiente.disabled = posicion == pics.length - 1;
+  }
+};
