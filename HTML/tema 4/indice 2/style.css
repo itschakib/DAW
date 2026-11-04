@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+/*
+section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+article {
+    background-color: red;
+    font-size: 1.8rem;
+    padding: 3px;
+    margin: 5px;
+    width: 200px;
+}
+*/
+article {
+    background-color:purple;
+    font-size: 1.8rem;
+    padding: 3px;
+    margin: 5px;
+    width: 150px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+@media  (max-width:600px){
+    section {
+        flex-direction: column;
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+}

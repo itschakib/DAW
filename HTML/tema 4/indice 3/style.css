@@ -1,0 +1,83 @@
+
+/* GENERAL */
+
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+/* FLEX CONTAINER */
+
+.contenedor {
+    display: flex;
+    background-color: lightgray;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* FLEX DIRECTION */
+
+.direction {
+    flex-direction: row;
+    /* row: horizontal */
+    /* column: vertical */
+    /* row-reverse: horizontal inverso */
+    /* column-reverse: vertical inverso */
+}
+
+/* JUSTIFY CONTENT */
+
+.justify {
+    justify-content: space-around;
+    /* flex-start */
+    /* flex-end */
+    /* center */
+    /* space-between */
+    /* space-around */
+    /* space-evenly */
+}
+
+/* ALIGN ITEMS */
+
+.align {
+    align-items: center;
+    /* flex-start */
+    /* flex-end */
+    /* center */
+    /* stretch */
+}
+
+/* FLEX WRAP */
+
+.wrap {
+    flex-wrap: wrap;
+    /* nowrap: no permite saltar de línea */
+    /* wrap: permite saltar de línea */
+}
+
+/* ALIGN SELF */
+
+.self {
+    align-items: flex-start;
+}
+
+.especial {
+    align-self: flex-end;
+}
+
+/* FLEX ITEMS */
+
+.caja {
+    width: 70px;
+    height: 60px;
+    background-color: lightblue;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

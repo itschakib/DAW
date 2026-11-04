@@ -1,0 +1,179 @@
+
+/* GENERAL */
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+h2 {
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* 1. DISPLAY */
+
+.block {
+    display: block;
+    background-color: lightblue;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: orange;
+}
+
+.none {
+    display: none;
+}
+
+
+/* 2. POSITION */
+
+.static {
+    position: static;
+    background-color: lightblue;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: lightgreen;
+}
+
+.contenedor {
+    position: relative;
+    height: 100px;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: orange;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    z-index: 10;
+}
+
+
+/* 3. FLOAT AND CLEAR */
+
+.float-left {
+    float: left;
+    width: 100px;
+    height: 60px;
+    background-color: lightblue;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* 4. Z-INDEX */
+
+.caja1 {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.caja2 {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background-color: orange;
+    top: -40px;
+    left: 40px;
+    z-index: 2;
+}
+
+
+/* 5. BOX-SIZING */
+
+.content {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid blue;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.border {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid green;
+    background-color: lightgreen;
+}
+
+
+/* 6. VISIBILITY */
+
+.visible {
+    visibility: visible;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    background-color: red;
+    padding: 10px;
+}
+
+
+/* 7. OVERFLOW */
+
+.overflow-visible {
+    overflow: visible;
+    width: 200px;
+    height: 40px;
+    background-color: lightblue;
+    margin-bottom: 30px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    width: 200px;
+    height: 40px;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+
+.overflow-auto {
+    overflow: auto;
+    width: 200px;
+    height: 40px;
+    background-color: pink;
+}
