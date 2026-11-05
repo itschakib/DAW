@@ -1,5 +1,5 @@
 
-window.onload = function () {
+
 
     let botones = document.querySelectorAll("button");
 //los buttonoes
@@ -96,5 +96,3 @@ window.onload = function () {
             sustituir.disabled = true;
         }
     };
-
-};

@@ -1,5 +1,5 @@
 
-window.onload = function () {
+
 
     let lista = document.querySelector("ul");
     let boton = document.querySelector("button");
@@ -17,4 +17,3 @@ window.onload = function () {
         }
     };
 
-};
