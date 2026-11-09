@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
 
     <?php
 
-    // Una función es un bloque de código al que ponemos un nombre.
-    // Nos permite reutilizar código sin tener que reescribirlo.
+    /*    Una función es un bloque de código al que ponemos un nombrey 
+    nos permite reutilizar código sin tener que reescribirlo. */
 
 
     // SIN PARÁMETROS Y SIN RETURN
@@ -83,5 +83,5 @@
     ?>
 
 </body>
-</html>
 
+</html>

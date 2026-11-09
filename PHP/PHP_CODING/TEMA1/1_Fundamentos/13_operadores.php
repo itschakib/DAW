@@ -1,77 +1,74 @@
-```php
+<!-- PHP OPERATORS -->
 <?php
-
 $salto = "<br>";
 
 $num1 = 14;
-$num2 = 20;
+$num2 = 15;
 
+//Operadores Aritmeticos
 
-// OPERADORES ARITMÉTICOS
+echo "Suma : " . ($num1 + $num2) . $salto;
+echo "Resta : " . ($num1 - $num2) . $salto;
+echo "Multiplicacion : " . ($num1 * $num2) . $salto;
+echo "Division : " . ($num2 / $num1) . $salto;
+echo "Resto : " . ($num2 % $num1) . $salto;
 
-echo "Suma: " . ($num1 + $num2) . $salto;
+$salto;
+$salto;
+$salto;
+$salto;
 
-echo "Resta: " . ($num2 - $num1) . $salto;
+// Operadores Logicos
 
-echo "Multiplicación: " . ($num1 * $num2) . $salto;
+/* num++ → use first, increase afterwards.
+++num → increase first, use afterwards.
+num-- → use first, decrease afterwards.
+--num → decrease first, use afterwards. */
 
-echo "División: " . ($num2 / $num1) . $salto;
+$num3 = 20;
+$num4 = null;
 
-echo "Resto: " . ($num2 % $num1) . $salto;
+//Postincremento  : the variable is used first for numm3 then it increased in num2
+$num4 = $num3++;
 
+echo "Valor de num4: $num4. Valor de num3 : $num3 $salto";
 
-// INCREMENTO Y DECREMENTO
+//Preincremento  : the variable is  increases first then gets used 
+$num4 = ++$num3;
 
-// Postincremento
-$num3 = $num2++;
-
-echo "Valor de num3: $num3. Valor de num2: $num2 $salto";
-
-// Preincremento
-$num3 = ++$num2;
-
-echo "Valor de num3: $num3. Valor de num2: $num2 $salto";
+echo "Valor de num4: $num4. Valor de num3: $num3 $salto";
 
 // Postdecremento
-$num3 = $num2--;
+$num4 = $num3--;
 
-echo "Valor de num3: $num3. Valor de num2: $num2 $salto";
+echo "Valor de num4: $num4. Valor de num3: $num3 $salto";
 
 // Predecremento
-$num3 = --$num2;
+$num4 = --$num3;
 
-echo "Valor de num3: $num3. Valor de num2: $num2 $salto";
+echo "Valor de num4: $num4. Valor de num3: $num3 $salto";
 
+//  Comparison operatos : comparing 2 values and returning opciones true or false 
 
-// OPERADORES LÓGICOS
+/* 
+Operator	Meaning	Example
+>	Greater than	10 > 5 → true
+<	Less than	5 < 10 → true
+>=	Greater than or equal	10 >= 10 → true
+<=	Less than or equal	5 <= 10 → true
+==	Equal value	12 == "12" → true
+!=	Different value	12 != 10 → true
+===	Equal value AND type	12 === "12" → false
+!==	Different value OR type	12 !== "12" → true
+ */
 
-echo "¿Es num1 mayor que 10?: "
-    . ($num1 > 10) . $salto;
-
-echo "¿Es num3 mayor o igual a 3 O es num3 menor que num2?: "
-    . (($num3 >= 3) || ($num3 < $num2)) . $salto;
-
-echo "¿Es num3 igual a num2 Y es num1 menor que num2?: "
-    . (($num3 == $num2) && ($num1 < $num2)) . $salto;
-
-
-// COMPARADOR ESTRICTO
-
-$numero = 12;
-$cadena = "12";
-
-$estricto = $numero === $cadena;
-
-// ==  → compara valor
-// === → compara valor y tipo
-
-echo $estricto . $salto;
+//  Logicos operators : Operadores logicos 
 
 
-// NOT
+/* | && | AND (Y) | Both conditions must be true |
+| || | OR (O) | At least one must be true |
+| ! | NOT (NO) | Reverses the result |
+ */
 
-echo "num1 y num2 NO son iguales: "
-    . !($num1 == $num2) . $salto;
 
 ?>
-```

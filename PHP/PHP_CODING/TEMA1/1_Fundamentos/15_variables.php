@@ -1,4 +1,3 @@
-```php
 <?php
 
 // VARIABLES GLOBALES, LOCALES Y ESTÁTICAS
@@ -118,4 +117,4 @@ duplicar(); // 512
 duplicar(); // 1024
 
 ?>
-```
+
