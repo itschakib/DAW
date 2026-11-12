@@ -1,0 +1,48 @@
+
+
+    <?php
+    if (isset($_GET["entero"])) {
+
+        $entero = filter_var($_GET["entero"], FILTER_VALIDATE_INT);
+        $decimal = filter_var($_GET["decimal"], FILTER_VALIDATE_FLOAT);
+        $correo = filter_var($_GET["correo"], FILTER_VALIDATE_EMAIL);
+        $url = filter_var($_GET["url"], FILTER_VALIDATE_URL);
+        $boolean = filter_var(
+            $_GET["boolean"],
+            FILTER_VALIDATE_BOOLEAN,
+            FILTER_NULL_ON_FAILURE
+        );
+
+        if ($entero !== false) {
+            echo "<p class='acierto'>Entero válido</p>";
+        } else {
+            echo "<p class='error'>Entero no válido</p>";
+        }
+
+        if ($decimal !== false) {
+            echo "<p class='acierto'>Decimal válido</p>";
+        } else {
+            echo "<p class='error'>Decimal no válido</p>";
+        }
+
+        if ($correo !== false) {
+            echo "<p class='acierto'>Correo válido</p>";
+        } else {
+            echo "<p class='error'>Correo no válido</p>";
+        }
+
+        if ($url !== false) {
+            echo "<p class='acierto'>URL válida</p>";
+        } else {
+            echo "<p class='error'>URL no válida</p>";
+        }
+
+        if ($boolean !== null) {
+            echo "<p class='acierto'>Boolean válido</p>";
+        } else {
+            echo "<p class='error'>Boolean no válido</p>";
+        }
+    }
+    ?>
+</body>
+</html>
