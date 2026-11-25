@@ -1,0 +1,20 @@
+.cositas {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.cositas img {
+    /* width: 30%; */
+/*     flex-basis: 30%; */
+flex-grow: 3;
+}
+p{
+  /*   flex-basis: 70%; */
+  flex-grow: 7;
+}
+.cositas p {
+    margin: 0;
+}

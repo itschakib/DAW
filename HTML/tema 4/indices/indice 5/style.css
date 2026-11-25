@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bloques {
+    display: flex;
+    gap: 5px;
+}
+
+.bloques div {
+    flex: 1;
+    background-color: #7BC6C7;
+    color: black;
+    padding: 10px;
+}
