@@ -34,9 +34,11 @@
     echo "El lenguaje de backend q aprendemos este año será " . $lenguaje . $salto;
     /* o the second methode is this */
     echo "El lenguaje de back q aprendemos este año será $lenguaje $salto";
-    /* the variables in php cannot start with a number only letter so we use _ to seperate them */
-    // $1var=1;
-    $_1var = 1;
+    // Una variable debe empezar por una letra o un guion bajo (_).
+    // No puede empezar por un número.
+
+    $_1var = 1; // Correcto
+    // $1var = 1; // Incorrecto
     ?>
 
 </body>
